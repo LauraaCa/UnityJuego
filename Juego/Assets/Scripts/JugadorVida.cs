@@ -11,7 +11,15 @@ public class VidaJugador : MonoBehaviour
 
         if (vida <= 0)
         {
-            Debug.Log("Jugador muerto");
+            Morir();
         }
+    }
+
+    private void Morir()
+    {
+        Debug.Log("Jugador muerto - EL JUEGO SE DETIENE");
+
+        // Detiene todo el juego
+        Time.timeScale = 0f;
     }
 }
