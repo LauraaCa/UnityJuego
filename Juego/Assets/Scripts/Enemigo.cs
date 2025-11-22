@@ -13,26 +13,26 @@ public class Enemigo : MonoBehaviour
     public Transform jugador;
 
     [Header("Percepción")]
-    public float radioDeteccion = 10f;
-    public float radioAtaque = 1.8f;
+    public float radioDeteccion;
+    public float radioAtaque;
 
     [Header("Patrulla")]
-    public float radioPatrulla = 10f;
-    public float tiempoIdle = 2f;
+    public float radioPatrulla;
+    public float tiempoIdle;
 
-    private float idleTimer = 0f;
+    private float idleTimer;
     private bool tieneDestino = false;
     private bool persiguiendo = false;
     private bool atacando = false;
 
     [Header("Daño")]
-    public float tiempoImpacto = 0.5f;    // tiempo exacto del golpe
-    public float duracionAtaque = 1.2f;   // duración total de la animación
+    public float tiempoImpacto;    // tiempo exacto del golpe
+    public float duracionAtaque;   // duración total de la animación
     public int daño = 20;
 
     [Header("Cooldown de daño")]
-    public float tiempoEntreDaños = 7;   // cada cuánto puede hacer daño
-    private float ultimoDaño = 0f;
+    public float tiempoEntreDaños;   // cada cuánto puede hacer daño
+    private float ultimoDaño;
 
 
     void Start()
